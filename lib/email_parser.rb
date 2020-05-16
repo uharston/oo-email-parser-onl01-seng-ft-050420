@@ -7,7 +7,7 @@
 #t.split(Regexp.union(delimiters)).reject { |e| e.empty? }
 class EmailParser
 
-  attr_accessor :name :emails
+  attr_accessor :name, :emails
 
   def initialize(emails)
     @emails = emails
