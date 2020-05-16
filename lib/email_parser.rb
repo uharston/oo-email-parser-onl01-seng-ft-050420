@@ -5,7 +5,7 @@
 
 #turn a string of comma and/or space separated emails into an array
 #t.split(Regexp.union(delimiters)).reject { |e| e.empty? }
-class EmailParser
+class EmailAddressParser
 
   attr_accessor :name, :emails
 
