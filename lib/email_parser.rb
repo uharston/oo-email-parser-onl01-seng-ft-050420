@@ -10,7 +10,7 @@ class EmailParser
   # attr_accessor :parse
 
   def initialize(emails)
-    @emails = emails
+    @emails = emails.parse
   end
   def parse
   @emails.split(Regexp.union([',', ' '])).reject { |e| e.empty? }
