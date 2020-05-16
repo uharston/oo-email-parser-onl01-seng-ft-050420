@@ -7,12 +7,14 @@
 #t.split(Regexp.union(delimiters)).reject { |e| e.empty? }
 class EmailParser
 
-  attr_accessor :parse
+  # attr_accessor :parse
 
   def initialize(emails)
     @emails = emails
   end
-#   def parse
-#   @emails.split(Regexp.union([',', ' '])).reject { |e| e.empty? }
-# end
+  def parse
+  @emails.split(Regexp.union([',', ' '])).reject { |e| e.empty? }
 end
+end
+
+# uriah_emails.parse
