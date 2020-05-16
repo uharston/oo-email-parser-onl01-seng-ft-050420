@@ -13,7 +13,7 @@ class EmailAddressParser
     @emails = emails
   end
   def parse
-  @emails.split(Regexp.union([',', ' '])).reject { |e| e.empty? }
+  @emails.split(Regexp.union([',', ' '])).reject { |e| e.empty? }.uniq
 end
 end
 
